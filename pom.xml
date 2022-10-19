@@ -16,8 +16,6 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<sonar.java.source>${java.version}</sonar.java.source>
-    <sonar.login>{aes-gcm}Knvsk0KS3eA1CiT1VdxUNgl+lOqY/QDCyI5DMqqdD90=</sonar.login>
-    <sonar.password>{aes-gcm}7WPTA4jOssYydyq4uQ47cwkQc5TJOzzifNX91xBmoSj9</sonar.password>
 	</properties>
 	<dependencies>
 		<dependency>
