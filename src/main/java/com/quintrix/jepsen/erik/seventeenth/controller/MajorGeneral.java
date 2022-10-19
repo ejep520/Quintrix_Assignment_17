@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class MajorGeneral {
-  private static final String DEFAULTMAJORGENERAL = "/static/majorGeneral.html";
+  private static final String DEFAULT_MAJOR_GENERAL = "/static/majorGeneral.html";
 
   @GetMapping(value = "/majorGeneral/", produces = "text/html")
   public String getMajorGeneral() {
-    return DEFAULTMAJORGENERAL;
+    return DEFAULT_MAJOR_GENERAL;
   }
 
   @GetMapping("/majorGeneral/{id}")
@@ -19,6 +19,6 @@ public class MajorGeneral {
       return "/static/minions.html";
     if (id.toLowerCase().startsWith("elements"))
       return "/static/elements.html";
-    return DEFAULTMAJORGENERAL;
+    return DEFAULT_MAJOR_GENERAL;
   }
 }
